@@ -1,0 +1,49 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.a660252397.menudemo.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="always"
+        tools:icon="@drawable/settings" />
+
+    <!-- *****************************- -->
+    <!-- **** OVERFLOW MENU CODE ****** -->
+    <!-- *****************************- -->
+
+    <item
+        android:id="@+id/action_overflow"
+        android:orderInCategory="100"
+        android:title="Overflow"
+        android:icon="@drawable/menuicon"
+        app:showAsAction="always" >
+
+    <menu>
+        <group android:checkableBehavior="single">
+
+            <item
+                android:id="@+id/menu_red"
+                app:showAsAction="never"
+                android:title="red" />
+
+            <item
+                android:id="@+id/menu_yellow"
+                app:showAsAction="never"
+                android:title="yellow" />
+
+            <item
+                android:id="@+id/menu_green"
+                app:showAsAction="never"
+                android:title="green" />
+
+            <item
+                android:id="@+id/menu_blue"
+                app:showAsAction="never"
+                android:title="blue" />
+
+        </group>
+    </menu>
+    </item>
+</menu>
